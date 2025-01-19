@@ -39,6 +39,15 @@
 	</div>
 	<script type="text/javascript" src="webapp/source_min.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="webapp/index.js" crossorigin="anonymous"></script>
+	<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').then((registration) => {
+      console.log('ServiceWorker registration successful:', registration);
+    }).catch((error) => {
+      console.log('ServiceWorker registration failed:', error);
+    });
+  }
+</script>
 </body>
 
 </html>
