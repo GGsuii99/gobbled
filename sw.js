@@ -11,7 +11,7 @@ const FILES_TO_CACHE = [
   '/frame.html',
   '/appmanifest.json',
   '/favicon.ico',
-  '/sw.js',
+ 
 
   // CSS files
   '/css/null.css',
